@@ -1,0 +1,68 @@
+<audio id="rickroll" autoplay loop muted></audio>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surprise!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background: linear-gradient(135deg, #000000, #1a1a1a);
+            color: #ff69b4;
+            text-align: center;
+            padding: 40px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            color: #00ffff;
+            text-shadow: 0 0 10px #ff69b4;
+        }
+
+        p {
+            margin-top: 10px;
+            color: #ffffff;
+            text-shadow: 0 0 5px #ff69b4;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>You've been Rick Rolled!</h1>
+    <p>Never gonna give you up, never gonna let you down...</p>
+
+    <audio id="rickroll" autoplay loop muted></audio>
+    <source src="assets/img/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3" type="audio/mp3">
+    </audio>
+    <script>
+        window.onload = function () {
+            var audio = document.getElementById('rickroll');
+            audio.muted = false;
+            audio.play();
+        };
+    </script>
+    <p>Just a joke, dm me!!</p>
+    <p>Click <a href="index.html" style="color: #ff69b4; text-decoration: underline;">here</a> to go back to the homepage.</p>
+    <p>Click <a href="https://youtu.be/dQw4w9WgXcQ?si=MRA0lMhLf7whRtBo" style="color: #ff69b4; text-decoration: underline;">here</a> to dm me to get my GitHub link!.</p>
+</body>
+
+</html>
